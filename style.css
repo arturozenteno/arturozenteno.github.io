@@ -3,6 +3,7 @@ body {
   text-align: left;
   padding-inline: 20px;
   font-size: 16px;
+  padding-bottom: 25px;
 }
 
 .icon {
@@ -12,23 +13,22 @@ body {
 
 .project-container {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: center; /* Center the cards horizontally */
 }
 
 .project-card {
-  width: 48.25%;
-  margin-bottom: 20px;
+  width: 40%; /* Adjust the width of the project cards */
+  margin: 25px; /* Add margin between project cards */
   border: none; /* Remove border */
-  border-radius: 10px;
-  padding: 10px;
-  text-align: center;
-  cursor: pointer;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  border-radius: 10px; /* Add border radius for rounded corners */
+  padding: 10px; /* Add padding to project cards */
+  text-align: center; /* Center the content horizontally */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
 }
-
 
 .project-link {
   text-decoration: none; /* Remove underline */
@@ -41,7 +41,7 @@ body {
 
 .project-description {
   font-size: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 .project-image {
@@ -49,4 +49,5 @@ body {
   height: auto; /* Automatically adjust the height to maintain aspect ratio */
   display: block; /* Ensure image is centered within its container */
   margin: 0 auto; /* Center the image horizontally */
+  
 }
