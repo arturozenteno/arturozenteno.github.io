@@ -1,17 +1,93 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styling for the body */
 body {
+  font-family: 'Times New Roman';
+  line-height: 1.6;
   background-color: #AED9E0;
-  text-align: left;
-  padding-inline: 20px;
-  font-size: 16px;
-  padding-bottom: 25px;
-  font-family: 'Times New Roman', Times, serif;
+  color: #000000;
+  margin: 0; /* Reset margin */
+  padding: 20px; /* Add padding to everything */
 }
 
-.icon {
-  width: 150px;
-  height: 150px;
+/* Container class to center content and provide padding */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
+/* Header styling */
+header {
+  background-color: #333;
+  color: #000; /* Changed text color to black */
+  padding: 20px 0;
+  width: 100%;
+}
+
+.header-content {
+  background-color: #001F3F; /* Navy blue background */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-text {
+  text-align: center;
+}
+
+.main-header {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #fff; /* White text color */
+}
+
+.portfolio-title {
+  font-size: 1.5rem;
+  color: #fff; /* White text color */
+}
+
+/* Main sections styling */
+main {
+  padding-top: 20px; /* Add padding to top */
+  padding-right: 0; /* No padding to right */
+  padding-bottom: 20px; /* Add padding to bottom */
+  padding-left: 0; /* No padding to left */
+}
+
+.about-me,
+.contact,
+.my-degrees {
+  margin-bottom: 20px;
+}
+
+.my-degrees {
+  margin-left: 40px; /* Adjust indentation */
+}
+
+.my-degrees li {
+  margin-bottom: 10px;
+}
+
+.my-degrees li a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+.my-degrees li a:hover {
+  text-decoration: underline;
+}
+
+/* Project card styling */
 .project-container {
   display: flex;
   flex-wrap: wrap;
@@ -55,4 +131,12 @@ body {
   height: auto; /* Automatically adjust the height to maintain aspect ratio */
   display: block; /* Ensure image is centered within its container */
   margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
 }
